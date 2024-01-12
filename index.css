@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    background-color: rgb(50, 50, 50);
+}
+main{
+    width: 350px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+}
+.button{
+    display: grid;
+    grid-template-rows: repeat(5,70px);
+    grid-template-columns: repeat(4,70px);
+    gap:10px;
+}
+.button .operator{
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color:white;
+    background-color: rgb(8, 8, 8);
+    font-size: 25px;
+    margin-top: 5px;
+}
+.answer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: none;
+    text-align: end;
+    font-size: 40px;
+    pointer-events: none;
+    padding: 10px;
+}
+.button .or{
+    background-color: orange;
+}
+.button .gr{
+    background-color: gray;
+}
